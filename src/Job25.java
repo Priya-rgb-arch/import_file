@@ -25,29 +25,32 @@ public class Job25 {
 
             // Start the process
             Process process = processBuilder.start();
-
- 
-
-            // Read the output from the process
-            InputStream inputStream = process.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-
  
 
             // Wait for the process to complete
             int exitCode = process.waitFor();
 
- 
+ 		// Handle the exit code
 
-            // Print the exit code
-            System.out.println("Script execution completed with exit code: " + exitCode);
+            if (exitCode == 0) {
+
+                System.out.println(
+
+                        File imported successfully.");
+
+            } else {
+
+                System.out.println("FDB file import failed. Exit code: " + exitCode);
+
+            }
+
         } catch (IOException | InterruptedException e) {
+
             e.printStackTrace();
+
         }
+
+         
 
 	}
 
