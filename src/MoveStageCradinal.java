@@ -23,8 +23,7 @@ public class MoveStageCradinal {
 
 			// Handle the exit code
 			if (exitCode == 0) {
-				System.out.println(
-						"Cardinal cost file move to source directory and Cost changes pushed to the store database successfully.");
+				System.out.println("Successfully.");
 			} else {
 				System.out.println("Failed. Exit code: " + exitCode);
 			}
