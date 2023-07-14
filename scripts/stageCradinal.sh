@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set file and directory paths
-cardinal_cost_file="path/to/cardinal_cost_file.csv"
-source_directory="path/to/source_directory"
+cardinal_cost_file="/home/sriharipriya/import_file/scripts/cardinal_cost_file.csv"
+source_directory="/home/sriharipriya/import_file/source_directory"
 
 # Set database connection details
 central_db_host="localhost"
